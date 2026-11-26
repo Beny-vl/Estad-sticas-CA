@@ -41,7 +41,7 @@ if seccion == "Stats Individuales":
     col1, col2 = st.columns([2, 1])
 
     with col2:
-      categoria_seleccionada = st.multiselect("Seleccionar Gategoría",
+      categoria_seleccionada = st.multiselect("Selionar Gategoría",
                                                 options=sorted(df['CATEGORIA'].dropna().unique()))
       posicion_seleccionada = st.multiselect("Seleccionar Posición",
                                                options=sorted(df['POSICION'].dropna().unique()))
