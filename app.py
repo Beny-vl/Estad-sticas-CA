@@ -120,9 +120,9 @@ if seccion == "Stats Individuales":
 
     # ------------------------ Tabs ofensiva y defensiva -----------------------
 
-    tab_ofensiva, tab_defensiva = st.tabs(["🛡️ Stats Defensivas", "⚔️ Stats Ofensivas",])
+    tab_defensiva, tab_ofensiva = st.tabs(["🛡️ Stats Defensivas", "⚔️ Stats Ofensivas",])
 
-    with tab_ofensiva:
+    with tab_defensiva:
       st.subheader(f"Rendimiento Defensivo - {jugador_seleccionado}")
 
       datos_1v1DEF = tabla_jugadorSeleccionado[['JORNADA', '1 VS 1 EXITOSOS DEFENSIVOS', '1VS1 NO EXITOSO DEFENSIVO']].sort_values('JORNADA')
@@ -160,7 +160,7 @@ if seccion == "Stats Individuales":
 
       st.divider() # ----- LINEA SEPARADORA ------
 
-    with tab_defensiva:
+    with tab_ofensiva:
       st.subheader(f"Rendimiento Ofensivo - {jugador_seleccionado}")
 
       datos_1v1OF = tabla_jugadorSeleccionado[['JORNADA', '1 VS 1 EXITOSOS OFENSIVOS', '1VS1 NO EXITOSO OFENSIVO']].sort_values('JORNADA')
