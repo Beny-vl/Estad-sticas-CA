@@ -144,7 +144,7 @@ if seccion == "Stats Individuales":
       st.write(f'Partidos donde se llevaron a cabo 1 vs 1 Defensivos: {jugador_partidosCon1v1DEF}')
 
       if (datos_1v1DEF['1 vs 1 Exitosos'].sum() != 0) :
-        PDEF = round(datos_1v1DEF['1 vs 1 Exitosos'].sum()/tabla_jugadorSeleccionado['1 VS 1 OFENSIVOS TOTALES'].sum()*100, 2)
+        PDEF = round(datos_1v1DEF['1 vs 1 Exitosos'].sum()/tabla_jugadorSeleccionado['1 VS 1 DEFENSIVOS TOTALES'].sum()*100, 2)
       else :
         PDEF = 0
 
